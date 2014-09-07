@@ -19,10 +19,10 @@
           a(href='/contact') Contact
       ul.nav.navbar-nav.navbar-right
         if !user
-          li(class=title=='Login'?'active':undefined)
-            a(href='/login') Login
-          li(class=title=='Create Account'?'active':undefined)
-            a(href='/signup') Create Account
+          li(class=title=='登录'?'active':undefined)
+            a(href='/login') 登录
+          li(class=title=='创建账号'?'active':undefined)
+            a(href='/signup') 创建账号
         else
           li.dropdown(class=title=='Account Management'?'active':undefined)
             a.dropdown-toggle(href='#', data-toggle='dropdown')
