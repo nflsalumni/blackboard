@@ -42,6 +42,8 @@ var passportConf = require('./config/passport');
  */
 
 var app = express();
+var livereload = require('express-livereload');
+
 
 /**
  * Connect to MongoDB.
@@ -218,6 +220,9 @@ app.use(errorHandler());
 /**
  * Start Express server.
  */
+
+livereload(app, {});
+
 
 app.listen(app.get('port'), function() {
   console.log('Express server listening on port %d in %s mode', app.get('port'), app.get('env'));
