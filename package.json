@@ -23,6 +23,7 @@
     "errorhandler": "^1.1.1",
     "express": "^4.8.7",
     "express-flash": "^0.0.2",
+    "express-livereload": "0.0.24",
     "express-session": "^1.7.5",
     "express-validator": "^2.3.0",
     "fbgraph": "^0.2.11",
