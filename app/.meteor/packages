@@ -9,8 +9,6 @@ coffeescript
 less
 accounts-ui
 accounts-password
-accounts-facebook
-accounts-weibo
 mrt:minimongoid@0.8.8
 iron:router
 cmather:handlebars-server@0.2.0
