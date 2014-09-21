@@ -1,12 +1,8 @@
 accounts-base@1.1.0
-accounts-facebook@1.0.0
-accounts-oauth@1.1.0
 accounts-password@1.0.1
 accounts-ui-unstyled@1.1.1
 accounts-ui@1.1.0
-accounts-weibo@1.0.0
 application-configuration@1.0.2
-autopublish@1.0.0
 autoupdate@1.1.0
 base64@1.0.0
 binary-heap@1.0.0
@@ -23,7 +19,6 @@ ddp@1.0.8
 deps@1.0.3
 ejson@1.0.2
 email@1.0.2
-facebook@1.1.0
 fastclick@1.0.0
 follower-livedata@1.0.1
 geojson-utils@1.0.0
@@ -54,8 +49,6 @@ mrt:accounts-t9n@0.0.13
 mrt:minimongoid@0.8.8
 mrt:underscore-string-latest@2.3.3
 npm-bcrypt@0.7.7
-oauth2@1.1.0
-oauth@1.1.0
 observe-sequence@1.0.2
 ordered-dict@1.0.0
 random@1.0.0
@@ -78,4 +71,3 @@ underscore@1.0.0
 url@1.0.0
 webapp-hashing@1.0.0
 webapp@1.1.1
-weibo@1.1.0
