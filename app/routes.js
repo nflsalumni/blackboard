@@ -3,8 +3,19 @@ Router.map(function() {
     path: '/'
   });
   this.route('dashboard', {
-    path: '/dashboard'
+    path: '/dashboard',
+    data: function () {
+      return Meteor.users();
+    }
   });
+
+
+  this.route('alumni', {
+    path: '/alumni',
+    waitOn: function() { return Meteor.subscribe('users'); },
+    data: function() { return Meteor.users.find(); }
+  });
+
   return this.route('notFound', {
     path: '*',
     where: 'server',
