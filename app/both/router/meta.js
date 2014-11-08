@@ -3,7 +3,7 @@ Meteor.startup(function() {
     Meta.config({
       options: {
         // Meteor.settings[Meteor.settings.environment].public.meta.title
-        suffix: 'Project Title'
+        suffix: '南外校友黑板2报'
       }
     });
   }

@@ -4,5 +4,4 @@ Router.route('/', {
 
 Router.route('/dashboard');
 Router.route('/alumni');
-
 Router.route('/profile');
