@@ -26,6 +26,7 @@ CodingGroupController = AppController.extend({
   onAfterAction: function () {
     Meta.setTitle('建站学习小组专页');
   },
+  fastRender: true,
   template: 'codingGroupHome'
 });
 
