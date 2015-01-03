@@ -1,0 +1,22 @@
+machine:
+  node:
+    version: 0.10.33
+dependencies:
+  pre:
+    - sudo apt-get update; sudo apt-get install ansible
+    - curl https://install.meteor.com/ | sh
+test:
+  override:
+    - meteor run --test
+  post:
+    - meteor build ../dist/ --server https://www.nflsalumni.org --architecture os.linux.x86_64
+deployment:
+  production:
+    branch: master
+    commands:
+      - scp ../dist/blackboard.tar.gz ubuntu@`echo $BLACKBOARD_SERVER`:/tmp/
+      - git clone https://github.com/nflsalumni/blackboard-deploy.git
+      - cd blackboard-deploy; echo "remote ansible_ssh_host=`echo $BLACKBOARD_SERVER` ansible_ssh_port=22" > remote_inventory;  ansible-playbook -i ./remote_inventory -u ubuntu -M ./library ./server-meteor-app-only.yml -v
+general:
+  artifacts:
+    - ../dist/blackboard.tar.gz

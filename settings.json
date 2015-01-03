@@ -1,0 +1,11 @@
+{
+  "production" : {
+  },
+  "development" : {
+  },
+  "public" : {
+    "meta" : {
+      "title" : "南外校友黑板报"
+    }
+  }
+}

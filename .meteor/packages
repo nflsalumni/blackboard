@@ -1,0 +1,23 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+accounts-password
+alanning:roles
+zimme:iron-router-active
+cmather:handlebars-server@0.2.0
+dburles:collection-helpers
+reywood:publish-composite
+mrt:moment
+mrt:underscore-string-latest
+matb33:collection-hooks
+dburles:factory
+cunneen:mailgun
+iron:router@1.0.0
+yasinuslu:blaze-meta
+useraccounts:bootstrap
+settinghead:auto-nprogress
+less
+mike:mocha
