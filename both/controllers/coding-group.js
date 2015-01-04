@@ -11,7 +11,8 @@ CodingGroupController = AppController.extend({
   },
   data: {
     posts: function () {
-      return Post.find({}, {$limit: POST_LIMIT}).fetch();
+      return Post.find({tags: {$not: 'faq'}},
+        {$limit: POST_LIMIT}).fetch();
     },
     faqs: function () {
       return Post.find({tags: 'faq'},
