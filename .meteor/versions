@@ -75,7 +75,7 @@ service-configuration@1.0.3
 session@1.0.5
 settinghead:auto-nprogress@1.0.0
 sha@1.0.2
-softwarerero:accounts-t9n@1.0.5
+softwarerero:accounts-t9n@1.0.4
 spacebars@1.0.4
 spacebars-compiler@1.0.4
 spiderable@1.0.6
@@ -85,11 +85,11 @@ tracker@1.0.4
 ui@1.0.5
 underscore@1.0.2
 url@1.0.3
-useraccounts:bootstrap@1.4.1
-useraccounts:core@1.4.1
+useraccounts:bootstrap@1.4.0
+useraccounts:core@1.4.0
 vsivsi:file-collection@0.3.3
 webapp@1.1.5
 webapp-hashing@1.0.2
 wizonesolutions:underscore-string@1.0.0
-yasinuslu:blaze-meta@0.2.2
+yasinuslu:blaze-meta@0.2.1
 zimme:iron-router-active@1.0.1
