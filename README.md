@@ -1,4 +1,4 @@
-# 南外校友黑板报源代码库
+# 南京外国语学校校友会黑板报源代码库
 
 A starting point for meteorjs applications, includes Iron Router, Bootstrap 3, Font Awesome, LESS and Coffeescript.
 
