@@ -1,0 +1,1 @@
+PhotosController = AppController.extend();

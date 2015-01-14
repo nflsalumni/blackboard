@@ -1,8 +1,5 @@
 ProfileController = AppController.extend({
-  data: {
-    // user: this.user()
-  },
-  onAfterAction: function () {
+  onAfterAction: function() {
     Meta.setTitle('Profile');
   }
 });

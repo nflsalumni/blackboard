@@ -1,11 +1,11 @@
 <template name="profile">
+  <h2>Edit Profile</h2>
+
   <div class="profile">
-    <h2>Edit Profile</h2>
     <form>
       {{#each profileFields}}
         {{> _profileField}}
       {{/each}}
-      {{submit_button 'Update Profile'}}
     </form>
   </div>
 </template>
