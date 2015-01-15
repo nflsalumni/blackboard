@@ -1,0 +1,1 @@
+ActivitiesController = AppController.extend();
