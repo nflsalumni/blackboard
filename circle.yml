@@ -6,6 +6,9 @@ dependencies:
     - sudo apt-get update; sudo apt-get install ansible
     - curl https://install.meteor.com/ | sh
 test:
+  pre:
+    - meteor update
+    - git reset --hard HEAD
   override:
     # - meteor run --test
     - echo "no test"
