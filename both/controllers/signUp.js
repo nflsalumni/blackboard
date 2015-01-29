@@ -1,0 +1,1 @@
+SignUpController = AppController.extend();

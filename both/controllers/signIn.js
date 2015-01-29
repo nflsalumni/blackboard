@@ -1,0 +1,1 @@
+SignInController = AppController.extend();

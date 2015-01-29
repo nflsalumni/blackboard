@@ -3,6 +3,16 @@ Router.route('/', {
   controller: 'HomeController'
 });
 
+Router.route('/signUp', {
+  name: 'signUp',
+  controller: 'SignUpController'
+});
+
+Router.route('/signIn', {
+  name: 'signIn',
+  controller: 'SignInController'
+});
+
 Router.route('/coding-group', {
   name: 'coding-group',
   controller: 'CodingGroupController'
