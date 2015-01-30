@@ -1,0 +1,76 @@
+<template name="signUp">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="text-center">
+          <h3>注册账户</h3>
+        </div>
+
+        <form class="form-horizontal" id="signUpForm" method="post" action="#" role="form">
+
+          <div class="form-group">
+            <div class="col-md-2">
+              <label for="name">真实姓名</label>
+            </div>
+
+            <div class="col-md-10">
+              <input type="input" class="form-control" id="name" placeholder="请输入姓名" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2">
+              <label for="graduationYear">毕业届数</label>
+            </div>
+
+            <div class="col-md-10">
+              <input type="input" class="form-control" id="graduationYear" placeholder="请输入毕业届数" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2">
+              <label for="email">邮箱</label>
+            </div>
+
+            <div class="col-md-10">
+              <input type="input" class="form-control" id="email" placeholder="请输入邮箱" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2">
+              <label for="password">密码</label>
+            </div>
+
+            <div class="col-md-10">
+              <input type="password" class="form-control" id="password" placeholder="请输入密码" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2">
+              <label for="confirmPassword">确认密码</label>
+            </div>
+
+            <div class="col-md-10">
+              <input type="password" class="form-control" id="confirmPassword" placeholder="请确认密码" required>
+            </div>
+          </div>
+
+          <input type="submit" class="btn btn-primary center-block" value="注册">
+
+        </form>
+
+        <div class="text-center">
+          <p>
+            如果您已经注册了账户,
+            <a href="{{ pathFor 'signIn' }}">请登录</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>

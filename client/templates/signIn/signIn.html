@@ -1,0 +1,129 @@
+<template name="signIn">
+  {{#if resetPassword}}
+
+    {{> ResetPassword}}
+
+  {{else}}
+
+    {{> signInMain}}
+
+    <p class="text-center">============================================================</p>
+
+    {{> forgotPassword}}
+
+  {{/if}}
+</template>
+
+<template name="signInMain">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="text-center">
+          <h3>登录账户</h3>
+        </div>
+
+        <form class="form-horizontal" id="signInForm" method="post" action="#" role="form">
+          <div class="form-group">
+            <div class="col-md-2">
+              <label for="email">邮箱</label>
+            </div>
+
+            <div class="col-md-10">
+              <input type="input" class="form-control" id="email" placeholder="请输入邮箱" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2">
+              <label for="password">密码</label>
+            </div>
+
+            <div class="col-md-10">
+              <input type="password" class="form-control" id="password" placeholder="请输入密码" required>
+            </div>
+          </div>
+
+          <input type="submit" class="btn btn-primary center-block" value="登录">
+
+        </form>
+
+        <div class="text-center">
+          <p>
+            如果您还没有注册账户,
+            <a href="{{ pathFor 'signUp' }}">请注册</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="forgotPassword">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="text-center">
+          <h3>糟糕,忘记密码了!</h3>
+        </div>
+
+        <div class="">
+          <h5>没关系，请填写您的注册邮箱来发送密码重置邮件。</h5>
+        </div>
+
+        <form class="form-horizontal" id="forgotPasswordForm" method="post" action="#" role="form">
+          <div class="form-group">
+            <div class="col-md-10">
+              <input id="forgotPasswordEmail" type="text" class="form-control" placeholder="请输入邮箱">
+            </div>
+
+            <div class="col-md-2">
+              <input type="submit" class="btn btn-primary center-block" value="发送">
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="ResetPassword">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="text-center">
+          <h3>亲爱的校友，欢迎回来。重置您的密码即可登录。</h3>
+        </div>
+
+        <form class="form-horizontal" id="resetPasswordForm" method="post" action="#" role="form">
+          <div class="form-group">
+            <div class="col-md-3">
+              <label for="resetPasswordPassword">新密码</label>
+            </div>
+
+            <div class="col-md-9">
+              <input type="password" class="form-control" id="resetPasswordPassword" placeholder="请输入新密码" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-3">
+              <label for="resetPasswordPasswordConfirm">确认新密码</label>
+            </div>
+
+            <div class="col-md-9">
+              <input type="password" class="form-control" id="resetPasswordPasswordConfirm" placeholder="请确认新密码" required>
+            </div>
+          </div>
+
+          <input type="submit" class="btn btn-primary center-block" value="重置">
+        </form>
+
+      </div>
+    </div>
+  </div>
+</template>

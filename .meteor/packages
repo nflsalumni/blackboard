@@ -17,10 +17,10 @@ dburles:factory
 cunneen:mailgun
 iron:router@1.0.0
 yasinuslu:blaze-meta
-useraccounts:bootstrap
 settinghead:auto-nprogress
 less
 ryw:blog
 meteorhacks:fast-render
 spiderable
 appcache
+email
