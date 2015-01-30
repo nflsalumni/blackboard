@@ -1,17 +1,14 @@
+Meteor.startup(function () {
+  Meteor.Mailgun.config({
+    username: process.env.MAILGUN_USERNAME,
+    password: process.env.MAILGUN_PASSWORD
+  });
+});
+
 Meteor.startup(function() {
 
-  // smtp configuration.
-  smtp = {
-    username: 'nflsalumnitest@gmail.com',
-    password: 'testalumninfls',
-    server: 'smtp.gmail.com',
-    port: 465
-  };
-
-  process.env.MAIL_URL = 'smtp://' + encodeURIComponent(smtp.username) + ':' + encodeURIComponent(smtp.password) + '@' + encodeURIComponent(smtp.server) + ':' + smtp.port;
-
   // emailTemplates configuration.
-  Accounts.emailTemplates.from = 'nflsalumnitest <no-reply@gmail.com>';
+  Accounts.emailTemplates.from = '南京外国语学校校友会黑板报 <nfls.alumni@gmail.com>';
 
 
   // VerifyEmail email configuration
