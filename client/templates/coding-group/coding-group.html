@@ -16,21 +16,34 @@
       </p>
     </div>
     <div class="container">
-      <div class="col-md-3">
-        <h3>FAQ</h3>
-        {{> postList faqs}}
+      <div class="row">
+        <div class="col-md-4">
+          <h3>重要链接</h3>
+          <ul>
+            <li><a href="https://docs.google.com/document/d/1R-7XA0u71zCJsGZahXGJf2gFbRhJuI68XOvu6ss6Mvc/edit#">小组章程</a></li>
+            <li><a href="https://www.pivotaltracker.com/n/projects/1205934">项目管理页面</a></li>
+            <li><a href="http://nflsdevs.slack.com/">Slack 团队协作通信（需邀请进入）</a></li>
+            <li><a href="https://docs.google.com/document/d/1H0YBOyIt-2E4olQCRNyRNJtjjByb7rTq-KRrW3Rhye0/edit">网站需求文档</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>FAQ</h3>
+          {{> postList faqs}}
+        </div>
+        <div class="col-md-4">
+          <h3>会议和视频教程录像</h3>
+          {{> postList meetings}}
+        </div>
       </div>
-      <div class="col-md-3">
-        <h3>最新更新文章</h3>
-        {{> postList posts}}
-      </div>
-      <div class="col-md-3">
-        <h3>会议和视频教程录像</h3>
-        {{> postList meetings}}
-      </div>
-      <div class="col-md-3">
-        <h3>建站大记事</h3>
-        {{> postList milestones}}
+      <div class="row">
+        <div class="col-md-4">
+          <h3>最新更新文章</h3>
+          {{> postList posts}}
+        </div>
+        <div class="col-md-4">
+          <h3>建站大记事</h3>
+          {{> postList milestones}}
+        </div>
       </div>
     </div>
   </div>
