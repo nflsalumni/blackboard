@@ -1,43 +1,39 @@
 <template name="profile">
-  <h2>Edit Profile</h2>
+  <h2>编辑个人信息</h2>
 
-  <div class="profile">
-    <form>
-      {{#each profileFields}}
-        {{> _profileField}}
-      {{/each}}
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-8">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="real-name" class="col-sm-2 control-label">真实姓名</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control"
+            value="{{profile.name}}"
+            id="real-name" placeholder="必须是真实姓名">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="year-of-graduation" class="col-sm-2 control-label">毕业届数</label>
+        <div class="col-sm-10">
+          <select class="form-control"
+            value="{{profile.graduationYear}}"
+            id="year-of-graduation">
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+          </select>
+          (以高中毕业年份为准)
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button class="btn btn-primary" id="btn-save">保存</button>
+          <button class="btn btn-default" id="btn-cancel">取消</button>
+        </div>
+      </div>
     </form>
+    </div>
   </div>
-</template>
 
-<template name="_profileField">
-  {{#if isTextField}}
-    <div class="form_group">
-      {{#with profile}}
-        {{text_field ../name type=../type required=../required hint=../hint placeholder=../placeholder afterAddon=../afterAddon class="profileField"}}
-      {{/with}}
-    </div>
-  {{/if}}
-
-  {{#if isTextArea}}
-    <div class="form_group">
-      {{#with profile}}
-        {{text_area ../name type=../type required=../required hint=../hint placeholder=../placeholder afterAddon=../afterAddon class="profileField"}}
-      {{/with}}
-    </div>
-  {{/if}}
-
-  {{#if isCheckbox}}
-    <div class="checkbox">
-      {{#with profile}}
-        {{check_box name label=label required=required}}
-      {{/with}}
-    </div>
-  {{/if}}
-
-  {{#if isFileField }}
-    <div class="form_group">
-      {{> file_field object=profile field=name}}
-    </div>
-  {{/if}}
 </template>
