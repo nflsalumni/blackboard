@@ -1,0 +1,148 @@
+@import '../../stylesheets/variables.import.less';
+
+#meteor-blog {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  &.blog-list {
+    article.post {
+      border-bottom: 1px solid #EEE;
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      h2 {
+        font-size: 32px;
+        line-height: 45px;
+        margin-bottom: 8px;
+        padding-right: 0px;
+
+        @media @tablet {
+          padding-right: 100px;
+        }
+
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .post-meta {
+        color: #bbb;
+        margin-bottom: 20px;
+
+        > a {
+          color: #bbb;
+
+          &:hover {
+            color: #bbb;
+          }
+        }
+
+        .post-tags {
+          display: inline;
+          p {
+            display: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  &.blog-single {
+    article.post {
+      border-bottom: 1px solid #EEE;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+
+      /* MEDIUM-INSERT PLUGIN */
+
+      .mediumInsert {
+        width: 100%;
+        margin: -1em 0 0 0 !important;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .mediumInsert.small {
+        float: left;
+        width: 33.333333%;
+        margin-right: 10px !important;
+
+        img {
+          margin: 15px auto;
+        }
+      }
+
+      .post-meta {
+        color: #bbb;
+        margin-bottom: 20px;
+
+        > a {
+          color: #bbb;
+
+          &:hover {
+            color: #bbb;
+          }
+        }
+
+        .post-tags {
+          display: inline;
+          p {
+            display: inherit;
+          }
+        }
+      }
+
+      h2 {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 8px;
+
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      img {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 30px auto;
+        display: block;
+      }
+
+      code {
+        color: inherit;
+      }
+    }
+
+    .blog-back-link {
+      margin-bottom: 20px;
+      i {
+        margin-right: 10px;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+
+    .share-buttons {
+      float: right !important;
+
+      .btn-facebook, .btn-twitter {
+        font-size: inherit;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
