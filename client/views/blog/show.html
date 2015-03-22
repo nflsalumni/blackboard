@@ -1,0 +1,42 @@
+<template name="blogShow">
+  <div id="meteor-blog" class="blog-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-11 col-md-8 col-md-offset-2">
+          {{> blogShowBody}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="blogShowBody">
+  <article class="post">
+    <h2>
+      {{title}}
+      {{#if isAdmin}}
+         <small><a href="#" id="edit-post">edit</a></small>
+      {{/if}}
+    </h2>
+    <div class="post-meta">
+      By {{authorName}} on {{blogFormatDate publishedAt}}
+      {{> blogTags }}
+    </div>
+    <div id="commentable-area" class="the-content">
+      {{{html}}}
+    </div>
+  </article>
+  <div class="blog-back-link pull-left">
+    <a href="{{pathFor 'blogIndex'}}"><i class="fa fa-caret-left"></i>Back to the Blog</a>
+  </div>
+  {{> shareit}}
+  {{> disqus this}}
+</template>
+
+<template name="disqus">
+  {{#if useDisqus}}
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  {{/if}}
+</template>
