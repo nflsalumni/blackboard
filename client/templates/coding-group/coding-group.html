@@ -28,37 +28,23 @@
         </div>
         <div class="col-md-4">
           <h3>FAQ</h3>
-          {{> postList faqs}}
+          {{> _postList posts=faqs tag='faq'}}
         </div>
         <div class="col-md-4">
           <h3>会议和视频教程录像</h3>
-          {{> postList meetings}}
+          {{> _postList posts=meetings tag='meeting'}}
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
           <h3>最新更新文章</h3>
-          {{> postList posts}}
+          {{> _postList posts=posts tag='post'}}
         </div>
         <div class="col-md-4">
           <h3>建站大记事</h3>
-          {{> postList milestones}}
+          {{> _postList posts=milestones tag='milestone'}}
         </div>
       </div>
     </div>
   </div>
-</template>
-
-<template name="postList">
-  {{#if this}}
-  <ul>
-    {{#each this}}
-    <li><a href="{{pathFor 'blogShow'}}">{{title}}</a>
-      <span class="post-meta">{{blogFormatDate publishedAt}}</span>
-    </li>
-    {{/each}}
-  </ul>
-  {{else}}
-   &gt;暂无内容&lt;
-  {{/if}}
 </template>

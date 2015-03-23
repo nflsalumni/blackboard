@@ -23,7 +23,7 @@ Meteor.publish 'posts', (limit) ->
     sort: publishedAt: -1
     limit: limit
 
-Meteor.publish 'taggedPosts', (tag) ->
+Meteor.publish 'taggedPosts', (tag, limit=10) ->
   check tag, String
 
   Post.find
@@ -32,6 +32,7 @@ Meteor.publish 'taggedPosts', (tag) ->
   ,
     fields: body: 0
     sort: publishedAt: -1
+    limit: limit
 
 Meteor.publish 'authors', ->
   ids = _.uniq(_.pluck(Post.all(fields: userId: 1), 'userId'))

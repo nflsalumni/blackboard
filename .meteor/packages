@@ -15,10 +15,11 @@ mrt:underscore-string-latest
 matb33:collection-hooks
 dburles:factory
 cunneen:mailgun
-iron:router@1.0.0
+iron:router@1.0.5
 yasinuslu:blaze-meta
 settinghead:auto-nprogress
 less
 ryw:blog
 meteorhacks:fast-render
 spiderable
+reactive-var
