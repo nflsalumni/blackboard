@@ -16,15 +16,15 @@ CodingGroupController = AppController.extend({
     },
     faqs: function () {
       return Post.find({tags: 'faq'},
-        {$limit: POST_LIMIT, $sort: {publishedAt: -1}}).fetch();
+        {limit: POST_LIMIT, sort: {publishedAt: -1}}).fetch();
     },
     meetings: function () {
       return Post.find({tags: 'meeting'},
-        {$limit: POST_LIMIT, $sort: {publishedAt: -1}}).fetch();
+        {limit: POST_LIMIT, sort: {publishedAt: -1}}).fetch();
     },
     milestones: function () {
       return Post.find({tags: 'milestone'},
-        {$limit: POST_LIMIT, $sort: {publishedAt: -1}}).fetch();
+        {limit: POST_LIMIT, sort: {publishedAt: -1}}).fetch();
     }
   },
   onAfterAction: function () {
