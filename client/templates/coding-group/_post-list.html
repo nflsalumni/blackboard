@@ -1,0 +1,18 @@
+<template name="_postList">
+  {{#if posts}}
+  <ul>
+    {{#each posts}}
+    <li><a href="{{pathFor 'blogShow'}}">{{title}}</a>
+      <span class="post-meta">{{blogFormatDate publishedAt}}</span>
+    </li>
+    {{/each}}
+  </ul>
+  {{else}}
+   &gt;暂无内容&lt;
+  {{/if}}
+  {{#if showMoreButton}}
+  <div>
+  <button class="btn btn-default btn-xs btn--load-more">更多...</button>
+  </div>
+  {{/if}}
+</template>
