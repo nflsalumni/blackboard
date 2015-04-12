@@ -23,3 +23,8 @@ ryw:blog
 meteorhacks:fast-render
 spiderable
 reactive-var
+
+forwarder:autoform-wizard
+aldeed:autoform
+aldeed:simple-schema
+aldeed:collection2
