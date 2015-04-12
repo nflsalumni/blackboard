@@ -4,6 +4,7 @@
 - [Pivotal Traker项目管理页面](https://www.pivotaltracker.com/n/projects/1205934)
 - [Slack 团队协作通信（需邀请进入）](http://nflsdevs.slack.com/)
 - [网站需求文档](https://docs.google.com/document/d/1H0YBOyIt-2E4olQCRNyRNJtjjByb7rTq-KRrW3Rhye0/edit#)
+- [官方推荐编程软件集](https://github.com/nflsalumni/blackboard/wiki/%E5%B0%8F%E7%BB%84%E5%AE%98%E6%96%B9%E6%8E%A8%E8%8D%90%E8%BD%AF%E4%BB%B6%E9%9B%86)
 
 如有建议、意见、疑问，请发信至settinghead@gmail.com。
 
