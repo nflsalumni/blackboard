@@ -1,0 +1,1 @@
+ArchiveController = AppController.extend();

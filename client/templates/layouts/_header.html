@@ -23,13 +23,19 @@
               </a>
             </li>
 
-            <li class="{{ isActiveRoute regex='coding-group' }}">
-              <a href="{{ pathFor 'coding-group' }}">
-                <i class="fa fa-cube"></i> 建站
+            <li class="{{ isActiveRoute regex='archive' }}">
+              <a href="{{ pathFor 'archive' }}">
+                <i class="fa fa-archive"></i> 资料集
               </a>
             </li>
 
-            <li class="{{ isActiveRoute regex='alumni' }}">
+            <li class="{{ isActiveRoute regex='coding-group' }}">
+              <a href="{{ pathFor 'coding-group' }}">
+                <i class="fa fa-cube"></i> 建站小组
+              </a>
+            </li>
+
+            <!-- <li class="{{ isActiveRoute regex='alumni' }}">
               <a href="{{ pathFor 'alumni' }}">
                 <i class="fa fa-users"></i> 校友录
               </a>
@@ -45,13 +51,15 @@
               <a href="{{ pathFor 'activities' }}">
                 <i class="fa fa-film"></i> 活动
               </a>
-            </li>
+            </li> -->
 
+            {{#if currentUser}}
             <li class="{{ isActiveRoute regex='dashboard' }}">
               <a href="{{ pathFor 'dashboard' }}">
                 <i class="fa fa-gear"></i> 我的面板
               </a>
             </li>
+            {{/if}}
 
             {{#if currentUser}}
             <li class="dropdown">
