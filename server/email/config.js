@@ -40,7 +40,8 @@ Meteor.startup(function() {
 
     // Wait 3 seconds for Meteor to create the user before sending an email.
     Meteor.setTimeout(function() {
-      Accounts.sendVerificationEmail(user._id);
+      //temporarily disable sending verification email
+      // Accounts.sendVerificationEmail(user._id);
     }, 3 * 1000);
 
     return user;
