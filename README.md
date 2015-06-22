@@ -1,4 +1,4 @@
-# 南京外国语学校校友会黑板报源代码库
+# 南京外国语学校校友会黑板报源代码库 [![Circle CI](https://circleci.com/gh/nflsalumni/blackboard.svg?style=svg)](https://circleci.com/gh/nflsalumni/blackboard)
 
 - [建站学习小组章程](https://docs.google.com/document/d/1R-7XA0u71zCJsGZahXGJf2gFbRhJuI68XOvu6ss6Mvc/edit#)
 - [Pivotal Traker项目管理页面](https://www.pivotaltracker.com/n/projects/1205934)

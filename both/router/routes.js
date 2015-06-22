@@ -28,6 +28,12 @@ Router.route('/photos', {
   controller: 'PhotosController'
 });
 
+Router.route('/archive', {
+  name: 'archive',
+  controller: 'ArchiveController'
+});
+
+
 Router.route('/activities', {
   name: 'activities',
   controller: 'ActivitiesController'

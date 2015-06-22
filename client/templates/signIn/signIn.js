@@ -32,7 +32,6 @@ Template.signInMain.events({
             alert('请前往您的注册邮箱，然后点击注册邮件中的链接。');
           }
         } else {
-          alert('亲爱的校友，欢迎回到黑板报！');
           Router.go('home');
         }
 
