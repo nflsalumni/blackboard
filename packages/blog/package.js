@@ -36,7 +36,7 @@ Package.onUse(function(api) {
     'client/boot.coffee',
     'client/compatibility/side-comments.js',
     'client/compatibility/medium-editor.js',
-    'client/compatibility/medium-editor-insert-plugin.all.js',
+    // 'client/compatibility/medium-editor-insert-plugin.all.js',
     'client/compatibility/bootstrap-tagsinput.js',
     'client/compatibility/typeahead.jquery.js',
     'client/compatibility/beautify-html.js',

@@ -33,6 +33,10 @@ Router.route('/archive', {
   controller: 'ArchiveController'
 });
 
+Router.route('archive/create', {
+  name: 'createPost',
+  controller: 'CreatePostController'
+});
 
 Router.route('/activities', {
   name: 'activities',

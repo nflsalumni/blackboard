@@ -24,6 +24,9 @@ meteorhacks:fast-render
 spiderable
 reactive-var
 
+copleykj:jquery-autosize
+markdown
+
 forwarder:autoform-wizard
 aldeed:autoform
 aldeed:simple-schema

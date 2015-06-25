@@ -45,6 +45,3 @@ CodingGroupController = AppController.extend({
   template: 'codingGroupHome',
   fastRender:true
 });
-
-CodingGroupController.events({
-});
