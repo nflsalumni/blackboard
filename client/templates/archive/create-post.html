@@ -1,0 +1,12 @@
+<template name="createPost">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <textarea id="post-text">{{markdownData}}</textarea>
+      </div>
+      <div class="col-md-6">
+        {{#markdown}}{{{markdownData}}}{{/markdown}}
+      </div>
+    </div>
+  </div>
+</template>
