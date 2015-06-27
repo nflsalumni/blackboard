@@ -8,11 +8,18 @@ Template.createPost.helpers({
 
 Template.createPost.onRendered(function () {
   var _self = this;
+  $.ajax({
+      url : "/example.md",
+      dataType: "text",
+      success : function (data) {
+          _self.$('#post-text').val(data).trigger('input');
+      }
+  });
   _self.$('#post-text').autosize();
 });
 
 Template.createPost.events({
-  'keyup #post-text': function (e) {
+  'input #post-text': function (e) {
     _data.set(e.target.value);
   }
 });
