@@ -8,14 +8,18 @@ Template.createPost.helpers({
 
 Template.createPost.onRendered(function () {
   var _self = this;
+  _self.$('#post-text').autosize();
+
   $.ajax({
       url : "/example.md",
       dataType: "text",
       success : function (data) {
-          _self.$('#post-text').val(data).trigger('input');
+        _data.set(data);
+        Meteor.setTimeout(function () {
+          _self.$('#post-text').trigger('input');
+        });
       }
   });
-  _self.$('#post-text').autosize();
 });
 
 Template.createPost.events({
