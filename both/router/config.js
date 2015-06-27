@@ -7,3 +7,7 @@ Router.configure({
 Router.plugin('dataNotFound', {
   dataNotFoundTemplate: 'notFound'
 });
+
+// Router.plugin('ensureSignedIn', {progress:false,
+//     only: ['createPost']
+// });
